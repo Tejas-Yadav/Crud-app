@@ -1,16 +1,20 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Users from './USers'
+import Users from './Users'
+import CreateUser from './createUser'
+import UpdateUser from './updateUser'
 
 
 const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <Routes path='/' element={<users/>} ></Routes>
-        <Routes path='/create' element={<CreateUser/>} ></Routes>
-        <Routes path='/update' element={<UpdateUser/>} ></Routes>
+        <Routes>
+          <Route path='/' element={<Users/>} ></Route>
+          <Route path='/create' element={<CreateUser/>} ></Route>
+          <Route path='/update' element={<UpdateUser/>} ></Route>
+        </Routes>
       </BrowserRouter>
     </div>
     
