@@ -1,39 +1,115 @@
-import React, {useState} from 'react'
+import React, { useState } from "react";
 
 const Users = () => {
-
-    const [users, setUsers] = useState([{
-        Name: "Tejas", Email: "tejasy919@gmail.com", Age: 20
-    }])
+  const [users, setUsers] = useState([
+    {
+      Name: "Tejas",
+      Email: "tejasy919@gmail.com",
+      Age: 20,
+    },
+  ]);
   return (
-    <div className='flex h-full bg-pink-200 justify-center align-middle'>
-      <div className=' w-100 bg-white rounded-2xl p-3 '>
-        <div className='flex bg-green-400 flex-auto justify-between mx-3'>
-          <h1 className='text-xl bg-yellow-200 font-semibold text-gray-950 '>
-            Card
-          </h1>
-          <div className='grid grid-flow-col grid-cols-2 grid-rows-4 m-3 p-3 pt-1'>
-            <div className='flex justify-between items-center font-semibold'>
-              <h1>Name</h1>
-              <h1>Email</h1>
-              <h1>Age</h1>
-              
+    <div className="bg-[#EBD3F8] min-h-screen grid">
+      <div className="bg-gray-100 rounded-xl min-h-auto min-w-auto place-self-center p-6 grid grid-cols-3 grid-rows-2 gap-6">
+        <div className="bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2">
+          <div className="bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10">
+            Contact 1
+          </div>{" "}
+          <div className="bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4">
+            <div className="font-semibold flex gap-2">
+              Name:<div className="font-normal">Rucha</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Phone no: <div className="font-normal">+91 9734864987</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div>
             </div>
-            {users.map((user)=>{
-              return(
-                <div className='border-y-2 w-full py-3 justify-between items-center'>
-                  <h1>{user.Name}</h1>
-                  <h1>{user.Email}</h1>
-                  <h1>{user.Age}</h1>
-                </div>
-              )
-            })}
-
+          </div>
+        </div>
+        <div className="bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2">
+          <div className="bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10">
+            Contact 2
+          </div>{" "}
+          <div className="bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4">
+            <div className="font-semibold flex gap-2">
+              Name:<div className="font-normal">Tejas</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Phone no: <div className="font-normal">+91 9734864987</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2">
+          <div className="bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10">
+            Contact 3
+          </div>{" "}
+          <div className="bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4">
+            <div className="font-semibold flex gap-2">
+              Name:<div className="font-normal">Bhavani</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Phone no: <div className="font-normal">+91 9734864987</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2">
+          <div className="bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10">
+            Contact 4
+          </div>{" "}
+          <div className="bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4">
+            <div className="font-semibold flex gap-2">
+              Name:<div className="font-normal">Radhika</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Phone no: <div className="font-normal">+91 9734864987</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2">
+          <div className="bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10">
+            Contact 5
+          </div>{" "}
+          <div className="bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4">
+            <div className="font-semibold flex gap-2">
+              Name:<div className="font-normal">Prakash</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Phone no: <div className="font-normal">+91 9734864987</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2">
+          <div className="bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10">
+            Contact 6
+          </div>{" "}
+          <div className="bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4">
+            <div className="font-semibold flex gap-2">
+              Name:<div className="font-normal">Neha</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Phone no: <div className="font-normal">+91 9734864987</div>
+            </div>{" "}
+            <div className="font-semibold flex gap-2">
+              Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Users
+export default Users;
