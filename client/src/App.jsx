@@ -1,7 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import './App.css'
-import Users from './Users'
+import Users from './USers'
 import CreateUser from './createUser'
 import UpdateUser from './updateUser'
 
