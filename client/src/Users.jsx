@@ -6,30 +6,18 @@ const Users = () => {
         Name: "Tejas", Email: "tejasy919@gmail.com", Age: 20
     }])
   return (
-    <div className='flex h-full bg-pink-200 justify-center align-middle'>
-      <div className='w-48 bg-white rounded-2xl p-3'>
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Age</th>
-                    <th>Action</th>
-                </tr>
-            </thead>
-            <tbody>
-               { users.map((user) => {
-                    <tr >
-                        <td>{user.Name}</td>
-                        <td>{user.Email}</td>
-                        <td>{user.Age}</td>
-                        <td><button>Edit</button><button>Delete</button></td>
-                    </tr>
-                })}
-            </tbody>
-        </table>
+
+    <div className='bg-[#EBD3F8] min-h-screen grid'>
+      <div className='bg-gray-100 rounded-xl min-h-auto min-w-auto place-self-center p-6 grid grid-cols-3 grid-rows-2 gap-6'>
+     <div className='bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2'><div className='bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10'>Contact 1</div> <div className='bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4'><div className='font-semibold flex gap-2'>Name:<div className="font-normal">Rucha</div></div> <div className='font-semibold flex gap-2'>Phone no: <div className="font-normal">+91 9734864987</div></div> <div className='font-semibold flex gap-2'>Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div></div></div></div>
+     <div className='bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2'><div className='bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10'>Contact 2</div> <div className='bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4'><div className='font-semibold flex gap-2'>Name:<div className="font-normal">Tejas</div></div> <div className='font-semibold flex gap-2'>Phone no: <div className="font-normal">+91 9734864987</div></div> <div className='font-semibold flex gap-2'>Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div></div></div></div>
+     <div className='bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2'><div className='bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10'>Contact 3</div> <div className='bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4'><div className='font-semibold flex gap-2'>Name:<div className="font-normal">Bhavani</div></div> <div className='font-semibold flex gap-2'>Phone no: <div className="font-normal">+91 9734864987</div></div> <div className='font-semibold flex gap-2'>Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div></div></div></div>
+     <div className='bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2'><div className='bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10'>Contact 4</div> <div className='bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4'><div className='font-semibold flex gap-2'>Name:<div className="font-normal">Radhika</div></div> <div className='font-semibold flex gap-2'>Phone no: <div className="font-normal">+91 9734864987</div></div> <div className='font-semibold flex gap-2'>Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div></div></div></div>
+     <div className='bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2'><div className='bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10'>Contact 5</div> <div className='bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4'><div className='font-semibold flex gap-2'>Name:<div className="font-normal">Prakash</div></div> <div className='font-semibold flex gap-2'>Phone no: <div className="font-normal">+91 9734864987</div></div> <div className='font-semibold flex gap-2'>Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div></div></div></div>
+     <div className='bg-white h-48 w-80 shadow-xl rounded-lg p-3 flex flex-col gap-2'><div className='bg-[#70099c] hover:scale-105 transition duration-300 hover:font-semifont text-white rounded-md p-2 font-semibold place-self-center px-10'>Contact 6</div> <div className='bg-[#f4e0ff] h-32 p-2 rounded-lg flex flex-col justify-around pl-4'><div className='font-semibold flex gap-2'>Name:<div className="font-normal">Neha</div></div> <div className='font-semibold flex gap-2'>Phone no: <div className="font-normal">+91 9734864987</div></div> <div className='font-semibold flex gap-2'>Email: <div className="font-normal">kvcsldjhfdv@gmail.com</div></div></div></div>
       </div>
-    </div>
+
+</div>
   )
 }
 
